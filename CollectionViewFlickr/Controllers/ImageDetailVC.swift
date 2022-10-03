@@ -8,7 +8,7 @@
 import UIKit
 
 class ImageDetailVC: UIViewController {
-
+    //https://farm66.staticflickr.com/65535/52365927874_5ae16c7b1a_m.jpg
     @IBOutlet weak var bigImageView: UIImageView!
     
     var farm:Int = 0
@@ -17,7 +17,7 @@ class ImageDetailVC: UIViewController {
     var secret = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-//https://farm66.staticflickr.com/65535/52365927874_5ae16c7b1a_m.jpg
+
       configure(with: "https://farm\(farm).staticflickr.com/\(server)/\(imageID)_\(secret).jpg")
     }
     
